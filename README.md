@@ -14,8 +14,9 @@
 
 ## 📂 Project Highlights
 
-### ☁️ Backend & Automation (Go)
-- **[Telegram Crypto Bot](telegram-bot)** – A multi-utility backend bot written in Go (Golang) that fetches live Bitcoin prices via REST API and handles user commands.
+### ☁️ Backend, Systems & Monitoring (Go)
+- **[Server Health Monitor](https://github.com/nirnayabikramshah/server-health-monitor)** – A lightweight CLI tool built in Go that monitors live CPU, RAM, and Disk usage using `gopsutil`. *(Foundation for future automated cloud alerting).*
+- **[Telegram Crypto Bot](telegram-bot)** – A multi-utility backend bot written in Go that fetches live Bitcoin prices via REST API and handles user commands.
 - **[Go Calculator](go-calculator)** – CLI calculator built in Go, focusing on type conversion and error handling (division by zero).
 - **[Go Number Guessing Game](go-guessing-game)** – Mini-game using Go's `math/rand/v2` package for interactive CLI logic.
 
@@ -40,7 +41,7 @@
 |----------|-------|
 | **Languages** | Go (Golang), Python 3, HTML/CSS |
 | **Backend/Bots** | Go Telegram Bot API, REST APIs (`net/http`) |
-| **Systems** | OpenCV, MediaPipe |
+| **Systems** | OpenCV, MediaPipe, `gopsutil` |
 | **Data** | Matplotlib, Pandas, NumPy |
 | **Security** | Python `secrets`, Boto3 (learning) |
 
@@ -50,9 +51,10 @@
 
 - [x] **Phase 1:** Master Python fundamentals, OOP, and libraries.
 - [x] **Phase 2:** Learn Go (Golang) for backend development and API integration.
-- [ ] **Phase 3 (Current):** Learn AWS CLI & `boto3` – build an **S3 Bucket Scanner**.
-- [ ] **Phase 4:** Learn Terraform – deploy a **secure VPC in code**.
-- [ ] **Phase 5:** Combine Go + Terraform – build an **Automated Cloud Remediation Tool**.
+- [x] **Phase 3:** Build CLI System Monitoring Tools (Go + Linux/Windows metrics).
+- [ ] **Phase 4 (Current):** Learn AWS CLI & `boto3` – build an **S3 Bucket Scanner**.
+- [ ] **Phase 5:** Learn Terraform – deploy a **secure VPC in code**.
+- [ ] **Phase 6:** Combine Go + Terraform – build an **Automated Cloud Remediation Tool**.
 
 ---
 
@@ -71,5 +73,6 @@ git clone https://github.com/yourusername/your-repo-name.git
 # For Python Projects (Install dependencies)
 pip install requests matplotlib pygame pandas numpy opencv-python mediapipe
 
-# For Go Projects (Navigate to the Go directory and run)
+# For Go Projects (Navigate to the Go directory, install dependencies, and run)
+go mod tidy
 go run main.go
